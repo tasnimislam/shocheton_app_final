@@ -37,10 +37,11 @@ InputDecoration textFieldInputDecoration(String hintText){
   );
 }
 
-TextStyle simpleTextFieldStyle(double font){
+TextStyle simpleTextStyle(double font){
   return TextStyle(
     fontSize: font ,
     color: Colors.black,
     fontWeight: FontWeight.bold,
+    fontFamily:
   );
 }

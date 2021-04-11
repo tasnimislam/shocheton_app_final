@@ -16,11 +16,11 @@ class _SignInState extends State<SignIn> {
         child:Column(
           children: [
             TextField(
-              style: simpleTextFieldStyle(14),
+              style: simpleTextStyle(14),
               decoration: textFieldInputDecoration("email"),
             ),
             TextField(
-              style: simpleTextFieldStyle(14),
+              style: simpleTextStyle(14),
               decoration: textFieldInputDecoration("password"),
             ),
             SizedBox(
@@ -29,9 +29,26 @@ class _SignInState extends State<SignIn> {
               alignment: Alignment.centerRight,
               padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Text(
-                  "Forgot Password",
-                  style: simpleTextFieldStyle(10),
+                  "Forgot Password ?",
+                  style: simpleTextStyle(10),
               ),
+            ),
+            SizedBox(height: 8, ),
+            Container(
+              alignment: Alignment.center,
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.symmetric(vertical: 20),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.pink,
+                    Colors.pink,
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: Text("Sign In",
+                      style: simpleTextStyle(18) )
             )
 
           ],

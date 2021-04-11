@@ -10,11 +10,12 @@ class ShochetonApp extends StatelessWidget {
       title: 'SHOCHETON',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: 'Satisfy-Regular',
         scaffoldBackgroundColor: Colors.pink[100],
         primarySwatch: Colors.pink,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SignIn()
+      home: SignIn(),
     );
   }
 }
