@@ -1,0 +1,4 @@
+#Sun Apr 11 18:26:45 BDT 2021
+base.0=D\:\\Shocheton_breast_cancer_app\\shocheton_app_v1\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
