@@ -21,3 +21,25 @@ Widget appBarMain(BuildContext context){
     elevation: 10.0,
   );
 }
+
+InputDecoration textFieldInputDecoration(String hintText){
+  return InputDecoration(
+    hintText: hintText,
+    hintStyle: TextStyle(
+        color: Colors.pink
+    ),
+    focusedBorder: UnderlineInputBorder(
+      borderSide: BorderSide(color: Colors.black38),
+    ),
+    enabledBorder: UnderlineInputBorder(
+      borderSide: BorderSide(color: Colors.black38),
+    ),
+  );
+}
+
+TextStyle simpleTextFieldStyle(int font){
+  return TextStyle(
+    fontSize: font ,
+    color: Colors.black,
+  );
+}
