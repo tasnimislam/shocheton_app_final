@@ -7,9 +7,13 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
+
+  TextEditingController emailTextEditingController = new TextEditingController();
+  TextEditingController passwordTextEditingController = new TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
-    final _screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
       appBar: appBarMain(context),
@@ -20,10 +24,12 @@ class _SignInState extends State<SignIn> {
         child:Column(
           children: [
             TextField(
+              controller: emailTextEditingController,
               style: simpleTextStyle(14),
               decoration: textFieldInputDecoration("email"),
             ),
             TextField(
+              controller: passwordTextEditingController,
               style: simpleTextStyle(14),
               decoration: textFieldInputDecoration("password"),
             ),

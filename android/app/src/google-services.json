@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "494495160598",
+    "project_id": "shocheton-app",
+    "storage_bucket": "shocheton-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494495160598:android:91574d16bc3a52d1491837",
+        "android_client_info": {
+          "package_name": "com.example.shocheton_app_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494495160598-d2e5fujaf9ab09cv2culr72rs12vc6ul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiNKmj9W2tjbVC5Lei_yxC3E112BssZoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494495160598-d2e5fujaf9ab09cv2culr72rs12vc6ul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
