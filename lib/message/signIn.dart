@@ -49,8 +49,43 @@ class _SignInState extends State<SignIn> {
               ),
               child: Text("Sign In",
                       style: simpleTextStyle(18) )
-            )
+            ),
+            Container(
+                alignment: Alignment.center,
+                width: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.symmetric(vertical: 8),
+                ),
 
+            Container(
+                alignment: Alignment.center,
+                width: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.symmetric(vertical: 20),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.white54,
+                      Colors.white24,
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Text("Sign in with Google",
+                    style: simpleTextStyle(18) )
+            ),
+
+            SizedBox(height: 16,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Don't have an account?",
+                  style: simpleTextStyle(10)),
+              Container(
+                  padding: EdgeInsets.symmetric(horizontal: 5),
+                  child: Text("Register Now",
+                      style: simpleTextStyle(12)),
+              )
+            ],
+          ),
           ],
         ),
 
@@ -58,3 +93,7 @@ class _SignInState extends State<SignIn> {
       );
   }
 }
+
+// class UnderlineText extends simpleTextStyle{
+//   UnderlineText(double font): super simpleTextStyle(font);
+// }

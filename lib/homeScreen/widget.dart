@@ -42,6 +42,6 @@ TextStyle simpleTextStyle(double font){
     fontSize: font ,
     color: Colors.black,
     fontWeight: FontWeight.bold,
-    fontFamily:
+    fontFamily: 'Oswald',
   );
 }
