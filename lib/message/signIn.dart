@@ -9,9 +9,13 @@ class SignIn extends StatefulWidget {
 class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
+    final _screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: appBarMain(context),
-      body: Container(
+      body:
+        Container(
+        alignment: Alignment.center,
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child:Column(
           children: [
@@ -82,18 +86,20 @@ class _SignInState extends State<SignIn> {
               Container(
                   padding: EdgeInsets.symmetric(horizontal: 5),
                   child: Text("Register Now",
-                      style: simpleTextStyle(12)),
-              )
+                          style:TextStyle(
+                            fontSize: 12 ,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Oswald',
+                            decoration: TextDecoration.underline,
+                          ),
+              ),
+            ),
             ],
           ),
           ],
         ),
-
       ),
-      );
+    );
   }
 }
-
-// class UnderlineText extends simpleTextStyle{
-//   UnderlineText(double font): super simpleTextStyle(font);
-// }

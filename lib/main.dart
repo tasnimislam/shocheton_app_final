@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shocheton_app_v1/message/signIn.dart';
+import 'package:shocheton_app_v1/message/signUp.dart';
 
 void main() => runApp(ShochetonApp());
 
@@ -15,7 +16,7 @@ class ShochetonApp extends StatelessWidget {
         primarySwatch: Colors.pink,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SignIn(),
+      home: SignUp(),
     );
   }
 }
